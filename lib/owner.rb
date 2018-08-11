@@ -9,4 +9,8 @@ class Owner
     @species = species
     @@all << self
   end
+
+  def say_species
+    return "I am a #{@species}."
+  end
 end
