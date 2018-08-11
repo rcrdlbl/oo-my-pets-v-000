@@ -52,6 +52,10 @@ class Owner
     @@all = []
   end
 
+  def self.count
+    @@all.count
+  end
+
   def sell_pets
     @pets.each do |species, pet|
       pet.each do |pet|
