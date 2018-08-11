@@ -51,4 +51,12 @@ class Owner
   def self.reset_all
     @@all = []
   end
+
+  def sell_pets
+    @pets.each do |species, pet|
+      species.each do |pet|
+        pet.mood = "nervous"
+      end
+    end
+  end
 end
