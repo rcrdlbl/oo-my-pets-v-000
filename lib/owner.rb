@@ -47,4 +47,8 @@ class Owner
       fish.mood = "happy"
     end
   end
+
+  def self.reset_all
+    @@all = []
+  end
 end
